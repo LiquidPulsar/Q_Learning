@@ -143,12 +143,12 @@ class Q_Learner():
     
     def dump(self):
         #with open("qTablefsos.txt","w") as file:
-        with open("qTable.txt","w") as file:
+        with open("qTable.json","w") as file:
             json.dump(self.qTable, file)
     
     def load(self):
         #with open("qTablefsos.txt") as file:
-        with open("qTable.txt") as file:
+        with open("qTable.json") as file:
             self.qTable = json.load(file)
 
 
